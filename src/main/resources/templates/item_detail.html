@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TEST</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="./src/img/kbtgn.png" th:src="@{itemData.imgSrc}"
+        alt="test" class="rounded mx-auto d-block">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 th:text="${itemData.itemNm}">
+          カブトガニ
+          <small class="text-muted"
+          th:text="${itemData.itemVal}">¥99,999</small>
+        </h3>
+      </div>
+    </div>
+    <hr class="my-4 border-secondary">
+    <div class="row mt-2">
+      <div class="col offset-1">
+        <p class="lead" th:text="${itemData.explain}">
+          説明文
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-end mt-4">
+      <div class="col-4">
+        <p><u th:text="${itemData.category}">#カニではない</u></p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1">
+        <p class="display-4 pl-2">
+        <a href="/items">←</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

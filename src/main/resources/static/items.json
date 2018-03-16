@@ -1,0 +1,80 @@
+{
+  "items" : [
+    {
+      "item_cd"  : "0001",
+      "item_data":
+      {
+        "itemNm"   : "ズワイガニ",
+        "itemVal"  : "1,000",
+        "category" : "カニ",
+        "imgSrc"   : "./img/zwign.png",
+        "explain"  : "十脚目ケセンガニ科（旧分類ではクモガニ科）に分類されるカニ。深海に生息する大型のカニ。"
+      }
+    },
+    { "item_cd"  : "0002",
+      "item_data":
+      {
+        "itemNm"   : "タラバガニ",
+        "itemVal"  : "2,000",
+        "category" : "カニではない",
+        "imgSrc"   : "./img/trbgn.png",
+        "explain"  : "十脚目（エビ目） - 異尾下目（ヤドカリ下目） - タラバガニ科 - タラバガニ属に分類される甲殻類の一種である。タラバガニ属はタラバガニを含む5種からなる。和名に「カニ」の名があるが、生物学上はヤドカリの仲間である。"
+      }
+    },
+    {
+      "item_cd"  : "0003",
+      "item_data":
+      {
+        "itemNm"   : "ケガニ",
+        "itemVal"  : "3,000",
+        "category" : "カニ",
+        "imgSrc"   : "./img/kgn.png",
+        "explain"  : ""
+      }
+    },
+    {
+      "item_cd"  : "0004",
+      "item_data":
+      {
+        "itemNm"  : "スベスベマンジュウガニ",
+        "itemVal"    : "4,000",
+        "category" : "カニ",
+        "imgSrc"  : "./img/sbsb.png",
+        "explain"  : "スベスベマンジュウガニスベスベマンジュウガニスベスベマンジュウガニ"
+      }
+    },
+    {
+      "item_cd"  : "0005",
+      "item_data":
+      {
+        "itemNm"   : "カニカマ",
+        "itemVal"  : "5,000",
+        "category" : "カニではない",
+        "imgSrc"   : "./img/knkm.png",
+        "explain"  : "カニカマカニカマカニカマカニカマカニカマカニカマ"
+      }
+    },
+    {
+      "item_cd"  : "0006",
+      "item_data":
+      {
+        "itemNm"   : "カブトガニ",
+        "itemVal"  : "6,000",
+        "category" : "カニではない",
+        "imgSrc"   : "./img/kbtgn.png",
+        "explain"  : ""
+      }
+    },
+    {
+      "item_cd"  : "0007",
+      "item_data":
+      {
+        "itemNm"   : "ブラックタイガー",
+        "itemVal"  : "7,000",
+        "category" : "エビ",
+        "imgSrc"   : "./img/blktgr.png",
+        "explain"  : ""
+      }
+    }
+  ]
+}

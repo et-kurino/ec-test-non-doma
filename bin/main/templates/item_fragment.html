@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TEST</title>
+</head>
+<body>
+  <div class="card d-flex" style="width: 18rem;"
+  th:fragment="item(item)">
+    <img class="card-img-top"
+    src="./src/img/sbsb.png" th:src="@{imgSrc}"
+    alt="Card image cap" th:alt="${itemNm}"
+    href="item/0000" th:href="@{itemCd}">
+    <!-- ↑line13 th:srcがあやしい -->
+  <a href="item/0000" th:href="@{itemCd}">
+    <div class="card-body">
+      <h5 class="card-title" th:text="${itemNm}">スベスベマンジュウガニ</h5>
+      <!-- th:textの問題で、pタグの中にuタグあるのが効かないかもしれない -->
+      <!-- その場合はuタグを外に -->
+      <p class="card-text text-right" th="${category}"><u>#Category</u></p>
+    </div>
+  </a>
+    <div class="card-footer text-muted">
+      <span class="lead" th:text="${value}">¥7,777</span>
+      <button type="button" class="btn btn-primary float-right mt-2">カートに追加</button>
+    </div>
+  </div>
+</body>
+</html>
